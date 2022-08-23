@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;700&display=swap');
+
+:root {
+    font-size: 62.5%;
+    
+    --main-dark-purple: #22212C;
+    --main-medium-purple: #302F3D;
+    --main-light-purple: #837E9F; 
+
+    --secondary-light-pink: #CB92B1;
+}
+
+/* START TAGS VALUE */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--main-dark-purple);
+
+    margin: 0;
+}
+
+p, span, h1, h2, h4, li {
+    color: var(--main-light-purple);
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.open_repos:hover * {
+    text-decoration: underline;
+}
+
+button {
+    border: none;
+}
+
+/* ALL CONTENT */
+
+.container {
+    display: grid;
+    grid-template-columns: 34.8rem 1fr;
+}
+
+/* USER SECTION */
+
+.user_box-style {
+    padding-block: 3rem;
+    background-color: var(--main-medium-purple);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+}
+
+.user {
+    padding: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.user_show {
+    border-radius: 2rem;
+
+    text-align: center;
+}
+
+.user_show img {
+    width: 12.8rem;
+    
+    border-radius: 12.8rem;
+    border: 2px solid #00FF00;
+}
+
+.user_show h1 {
+    margin-top: 3rem;
+
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.user_show p {
+    margin-top: 1rem;
+
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+
+.user_details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    padding-left: 4rem;
+}
+
+.user_details li {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.user_details span {
+    font-size: 1.2rem;
+}
+
+.user_skills h2 {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.user_skills div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+} 
+
+.user_skills button {
+    min-width: 7rem;
+
+    padding-block: 0.6rem;
+    margin-top: 1rem;
+
+    background-color: var(--secondary-light-pink);
+    color: var(--main-medium-purple);
+
+    border-radius: 3rem;
+
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.user_experiences h2, .user_education h2 {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.user_experiences ul, .user_education ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.user_experiences h4, .user_education h4 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.user_experiences span, .user_education span {
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.user_experiences p, .user_education p {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+/* PROJECTS SECTION */
+
+.projects_box-style {
+    padding-block: 3rem;
+    background-color: var(--main-medium-purple);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+}
+
+.projects {
+    padding: 4rem 4rem 4rem 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.projects_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projects_head *, .projects_posts h2 {
+    margin-inline: 3rem;
+}
+
+.projects_head span {
+    font-size: 1.4rem;
+    font-weight: lighter;
+}
+
+.projects_me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.projects_box {
+    padding-inline: 3rem;
+}
+
+.projects_box * {
+    display: inline-block;
+}
+
+.projects_title {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    font-size: 1.6rem;
+    font-weight: bold;
+
+    margin-bottom: 0.5rem;
+}
+
+.projects_box p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.projects_box ul {
+    padding: 0;
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+}
+
+.projects_box ul li div, .projects_box ul li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.projects_box ul #projectLangs {
+    justify-content: flex-end;
+}
+
+#projectDescription {
+    min-height: 6rem;
+}
