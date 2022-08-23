@@ -195,8 +195,12 @@ button {
     justify-content: space-between;
 }
 
-.projects_head *, .projects_posts h2 {
-    margin-inline: 3rem;
+.projects_head h2, .projects_posts h2 {
+    margin-left: 3rem;
+}
+
+.projects_head span {
+    margin-right: 3rem;
 }
 
 .projects_head span {
@@ -260,4 +264,18 @@ button {
 
 #projectDescription {
     min-height: 6rem;
+}
+
+@media (max-width: 900px) {
+    .container {
+        display: initial;
+    }
+
+    .projects {
+        padding: 2rem 4rem 4rem 4rem;
+    }
+
+    .projects_me {
+        grid-template-columns: 1fr;
+    }
 }
